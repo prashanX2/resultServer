@@ -14,14 +14,14 @@ public class Main {
             String clientSentence;
             String capitalizedSentence;
             final ServerSocket serverSocket = new ServerSocket(22222);
-
+            System.out.println("Result Server started on main: " + serverSocket.getInetAddress() + "@" + serverSocket.getLocalPort());
             //final DatagramSocket serverSocket = new DatagramSocket(44444);
 
 
 
             while(true)
             {
-                System.out.println("Result Server started on main: " + serverSocket.getInetAddress() + "@" + serverSocket.getLocalPort());
+
                 Socket connectionSocket = serverSocket.accept();
 
                 BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
