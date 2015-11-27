@@ -35,7 +35,7 @@ public class Main {
 
 
 
-                System.out.println("sent");
+                System.out.println("sent to");
             }
 
 
